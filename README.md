@@ -31,7 +31,7 @@ Before running this project, ensure you have the following:
 ## Installation and Setup
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/rajanarahul93/Cloud-Service-Misconfiguration-Scanner.git
+   git clone https://github.com/rajanarahul93/Cloud-Service-Misconfiguration-Scanner-Jazzee-Technologies-Task.git
    cd Cloud-Service-Misconfiguration-Scanner
    ```
 
