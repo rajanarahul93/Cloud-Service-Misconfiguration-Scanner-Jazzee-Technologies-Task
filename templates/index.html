@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Misconfiguration Scanner</title>
+</head>
+<body>
+    <h1>AWS Misconfiguration Scanner</h1>
+
+    <h2>EC2 Instances</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Instance ID</th>
+                <th>Instance Type</th>
+                <th>State</th>
+                <th>Public IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for instance in ec2_instances %}
+            <tr>
+                <td>{{ instance.InstanceId }}</td>
+                <td>{{ instance.InstanceType }}</td>
+                <td>{{ instance.State }}</td>
+                <td>{{ instance.PublicIP }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
